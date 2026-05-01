@@ -1,5 +1,11 @@
 # NeRFusion: Fusing Radiance Fields for Large-Scale Scene Reconstruction (CVPR 2022 Oral)
 
+This repository is based on the original implementation from:https://github.com/jetd1/NeRFusion
+
+All credit goes to the original authors.
+
+This version is maintained for study and experimentation purposes.
+
 [Project Sites](https://jetd1.github.io/NeRFusion-Web/)
  | [Paper](https://arxiv.org/abs/2203.11283) |
 Primary contact: [Xiaoshuai Zhang](https://jetd1.github.io/NeRFusion-Web/)
