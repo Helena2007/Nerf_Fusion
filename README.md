@@ -4,10 +4,6 @@
  | [Paper](https://arxiv.org/abs/2203.11283) |
 Primary contact: [Xiaoshuai Zhang](https://jetd1.github.io/NeRFusion-Web/)
 
-## Note
-
-This `dev` branch is currently **under development**. We will finish and merge this into `main` in a few days. This is a re-development of the original NeRFusion code based heavily on [nerf_pl](https://github.com/kwea123/nerf_pl), [NeuralRecon](https://github.com/zju3dv/NeuralRecon), [MVSNeRF](https://github.com/apchenstu/mvsnerf). We thank the authors for sharing their code. The model released in this repo is optimized for large-scale scenes further compared to the CVPR submission. A changelist will be provided.
-
 
 ## Introduction
 
