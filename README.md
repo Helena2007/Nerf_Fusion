@@ -6,10 +6,7 @@ All credit goes to the original authors.
 
 This version is maintained for study and experimentation purposes.
 
-[Project Sites](https://jetd1.github.io/NeRFusion-Web/)
  | [Paper](https://arxiv.org/abs/2203.11283) |
-Primary contact: [Xiaoshuai Zhang](https://jetd1.github.io/NeRFusion-Web/)
-
 
 ## Introduction
 
@@ -18,19 +15,6 @@ Primary contact: [Xiaoshuai Zhang](https://jetd1.github.io/NeRFusion-Web/)
 While NeRF has shown great success for neural reconstruction and rendering, its limited MLP capacity and long per-scene optimization times make it challenging to model large-scale indoor scenes. In contrast, classical 3D reconstruction methods can handle large-scale scenes but do not produce realistic renderings. We propose NeRFusion, a method that combines the advantages of NeRF and TSDF-based fusion techniques to achieve efficient large-scale reconstruction and photo-realistic rendering. We process the input image sequence to predict per-frame local radiance fields via direct network inference. These are then fused using a novel recurrent neural network that incrementally reconstructs a global, sparse scene representation in real-time at 22 fps. This volume can be further fine-tuned to boost rendering quality. We demonstrate that NeRFusion achieves state-of-the-art quality on both large-scale indoor and small-scale object scenes, with substantially faster reconstruction speed than NeRF and other recent methods.
 
 <img src="./assets/pipeline.png" />
-
-## Reference
-Please cite our paper if you are interested   
- <strong>NeRFusion: Fusing Radiance Fields for Large-Scale Scene Reconstruction</strong>.  &nbsp;&nbsp;&nbsp; 
-```
-@article{zhang2022nerfusion,
-  author    = {Zhang, Xiaoshuai and Bi, Sai and Sunkavalli, Kalyan and Su, Hao and Xu, Zexiang},
-  title     = {NeRFusion: Fusing Radiance Fields for Large-Scale Scene Reconstruction},
-  journal   = {CVPR},
-  year      = {2022},
-}
-```
-
 
 ## Installation
 
@@ -116,6 +100,17 @@ See `opt.py` for more options.
 
 We applied optimization on large-scale scenes in this code base, and the performance may not exactly match all numbers in the paper. Our test results with this code base is reported here. For generalized no per-scene optimization setting, we achieve 23.35/0.844/0.333 on ScanNet eight scenes, 26.23/0.925/0.169 on DTU, and 24.21/0.888/0.129 on NeRF Synthetic. For per-scene optimization setting, we achieve 27.78/0.917/0.199 on ScanNet eight scenes, 31.76/0.961/0.118 on DTU, and 29.88/0.949/0.099 on NeRF Synthetic.
 
+## Reference
+Please cite our paper if you are interested   
+ <strong>NeRFusion: Fusing Radiance Fields for Large-Scale Scene Reconstruction</strong>.  &nbsp;&nbsp;&nbsp; 
+```
+@article{zhang2022nerfusion,
+  author    = {Zhang, Xiaoshuai and Bi, Sai and Sunkavalli, Kalyan and Su, Hao and Xu, Zexiang},
+  title     = {NeRFusion: Fusing Radiance Fields for Large-Scale Scene Reconstruction},
+  journal   = {CVPR},
+  year      = {2022},
+}
+```
 
 ## Acknowledgement
 Our repo is developed based on [nerf_pl](https://github.com/kwea123/nerf_pl), [NeuralRecon](https://github.com/zju3dv/NeuralRecon) and [MVSNeRF](https://github.com/apchenstu/mvsnerf). Please also consider citing the corresponding papers. 
